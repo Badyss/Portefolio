@@ -1,0 +1,227 @@
+/**
+main content
+*/
+
+main {
+    display: flex;
+    margin: 0  15%;
+}
+
+main > * {
+    width: 50%;
+    margin-top: 50px;
+}
+
+main img {
+    width: calc(100% - 20% *2);
+
+    margin: 0 20%;
+    object-fit: contain;
+}
+
+main > div:nth-child(1) {
+    margin-top: 15%;
+}
+
+.titre {
+    margin-left:-3px;
+    position: relative;
+    color:white;
+    font-family: sans-serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #ffffff, #3f48ce, #ffffff);
+    background-size:80%;
+    animation: inverse 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes inverse{
+    0%{
+      background-position: -200%;
+    }
+    50%{
+      background-position: 300%;
+    }  
+    100%{
+        background-position: -200%;
+    }
+}
+
+.switch {
+    font-size:22px;
+    font-family: Helvetica, sans-serif
+}
+.switch span:before {
+    content:"";
+    animation : switch 9s infinite , fondu 4.5s infinite
+}
+
+@keyframes switch {
+    0%, 50%{
+        content: "EN BUT R&T";
+    }
+    50.1%, 100%{
+        content: "FUTUR INGÉNIEUR CYBER";
+    }
+}
+
+@keyframes fondu {
+    0%{
+      opacity:0
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+       opacity:0
+    }
+}
+
+.suis {
+    color:rgb(94, 118, 253);
+    font-size:20px;
+    margin-top:14%;
+    -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0,0,0,0.2));
+    animation: wave 1s infinite;
+}
+
+
+@keyframes wave {
+    0%
+    {
+        transform: translateY(0px)
+    }
+    50%
+    {
+        transform: translateY(-2px)
+    }
+    100%
+    {
+        transform: translateY(0px)
+    }
+}
+
+.pres {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:7%;
+}
+
+.pres a {
+    text-decoration: none;
+    color:rgb(94, 118, 253);
+}
+.pres a:hover {
+    text-decoration: none;    
+    color:rgb(150, 163, 233);
+}
+
+
+.savoir {
+    margin-top:3%;
+    color: white;
+    background-color: rgb(94, 118, 253);
+    padding: 10px;
+    font-size: 19px;
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition:0.2s ease-in;
+}
+
+.savoir:hover {
+    background-color: rgb(24, 45, 165);
+
+}
+
+.javaw {
+    margin-top:2%;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: fonduv2 2s
+}
+
+@keyframes fonduv2 {
+    0%{
+      opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+
+.javaw a {
+    text-decoration: none;
+    color:  rgb(94, 118, 253);
+}
+
+.javaw a:hover {
+    text-decoration: none;
+    color:  rgb(150, 163, 233);
+}
+
+
+
+
+/**
+photo 
+*/
+
+
+
+.photo {
+    margin-top:10%;
+}
+
+
+.photo img {
+    position:relative;
+    width:73%;
+    height:73%;
+    border-radius: 30%;
+    animation: waves 3s infinite ;
+    z-index: 1;
+}
+
+.rond {
+    margin-top:10%;
+    margin-left:5%;
+    width: 75%;
+    height: 100%;
+
+    border-radius: 100%;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center center;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: bulle 4s ease-in-out infinite, couleur 3s infinite;
+    transition:all 1s ease-in-out;
+    transform: translate(20%, -90%);
+    z-index: 0;
+}
+
+@keyframes bulle {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 60% 40% 30% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+@keyframes couleur{
+    0% {
+        background-color: #ffffff;
+    }
+    50% {
+        background-color: #b40aca;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}

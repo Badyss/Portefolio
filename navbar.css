@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background-image: url("file:///C:/Users/badys/OneDrive/Bureau/site%20v2/background5.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position:sticky;
+    top:0px;
+    z-index:50;
+    transition:2s ease-in-out
+}
+
+header.sticky::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 44px;
+  z-index: -1;
+  background-color: rgba(59, 137, 255, 0.8);
+  margin-left:85px;
+  margin-top:24px;
+  border-radius: 5px;
+  transform: translateX(-100%);
+  animation: slide 0.8s forwards;
+  box-shadow: 4px 5px 15px rgba(255, 255, 255, 0.818);
+}
+
+header:not(.sticky) {
+
+  animation: slide 0.8s forwards;
+}
+@keyframes slide {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header > * {
+    margin: 0 30px;
+    background-color: bl;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 90px;
+    margin-left:40px;
+    transition: 2.5s ease-in-out;
+}
+
+header > div {
+    display: flex;
+    line-height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin-top:20px;
+}
+
+header ul li {
+    flex-wrap: wrap;
+    margin:  0 20px;
+}
+
+@keyframes cligotant {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    50% {
+        color: rgb(68, 140, 248);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:18px;
+    margin-left:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition:0.3s
+}
+
+.navbar ul li a:hover{
+    animation: cligotant 1.3s infinite;
+    text-decoration-line: underline;
+}
+
+.logonav:hover {
+    transform: rotate(360deg)
+}
+
+
+
+
+
+/**
+dropdown-content
+*/
+
+
+
+
+
+
+.background {
+  height:35px;
+  width: 70px;
+  background-color: rgb(94, 118, 253);
+  border-radius: 7px;
+  text-align:center;
+}
+
+.dropdown > *{
+  display: block;
+  margin-top:20px;
+}
+
+.dropdown .dropbtn {
+  margin-left:-19px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition:0.15s ease-in;
+  cursor:pointer;
+  background:none;
+  border:none;
+  margin: 6 4;
+}
+
+.background:hover {
+  background-color:rgb(36, 58, 180);
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  margin-top: 46px;
+  display: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  height: 110px;
+  width: 200px;
+  margin-left:-130px;
+  padding:0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  padding:10px;
+}
+
+
+.dropdown .dropdown-content div > * {
+  margin: 3px 5px;
+}
+
+.dropdown .dropdown-content .flex {
+  display: flex;
+  width: 100%;
+  height:50%;
+}
+
+.dropdown .dropdown-content .flex a{
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  color:darkslategrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height:30px;
+  width:100px;
+  transition:0.2s;
+}
+
+.dropdown .dropdown-content .flex a:hover{
+  color:blue;
+  font-size:15px;
+}
+
+.dropdown .dropdown-content .flex > div {
+  text-align: center;
+  width: 100%;
+}
+
+
+.dropdown .dropdown-content div  a {
+  text-align:center;
+  margin: 0 0px;
+}
+
+
+
+/**
+SCrollbar
+*/
+
+
+
+
+::-webkit-scrollbar{
+  width:15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:white;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(rgb(67, 210, 253),rgb(94, 118, 253));
+}
+
+@media (max-width:960px){
+  .navbar {
+      display:none;
+  }
+  .header{
+      position: static ;
+  }
+  header.sticky::before {
+    display:none;
+  }
+}
+

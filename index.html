@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="competences.css">
+    <link rel="stylesheet" href="projets.css">
+    <title>Badyss</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" class="logonav">
+            <nav class="navbar">   
+                <ul class="ul">
+                    <li><a href="#" class="ul" >Accueil</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#proj" class="ul">Mes projets</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dropdown">
+            <div class="background">
+                <button class="dropbtn">Contact</button>
+            </div>
+            <div class="dropdown-content">
+                <div class="flex">
+                    <img src="gmail.png" class="gmail">
+                        <div>
+                            <a target="_blank"  href="mailto:badyssaz@gmail.com" >Me contacter</a>
+                        </div>
+                </div>
+                <div class="flex">
+                    <img src="linkedin.png" class="linkedin"> 
+                        <div>
+                            <a target="_blank"  href="https://www.linkedin.com/in/badyss-azzouz-0468b8265" >Voir ma page</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="titre">BADYSS AZZ</h1>
+                <div class="switch"> <span></span></div>
+                    <div class="suis">Qui suis-je ? 🙇🏻</div>
+                <p class="pres"> Dans la vie je suis quelqu'un de simple, organisé et rigoureux.<br>
+                    Ce que j'aime plus que tout dans la vie, c'est les <a target="_blank" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_informatique">réseaux informatiques</a> et le basket.
+                </p>
+            <button onclick="intro()" id="savoir" class="savoir">En savoir plus </button>
+            <div id="javaw" class = "javaw">Bonjour, je m'appelle Badyss et je suis actuellement en BUT Réseaux & télécom à l'
+                <a target="_blank" href="https://www.univ-spn.fr/">Université Sorbonne Paris Nord</a>. J'aime bien les réseaux informatiques et conseiller des gens,
+                    j'ai pu expérimenter ces deux facultés d'une part au sein de mon rôle de chef de projet au <a target="_blank" href="https://esplaboratory.gitlab.io/website/">Fablab</a> et d'une autre part grâce à mon BUT.
+                <br>Et donc je me suis dis, pourquoi ne pas être <a target="_blank" href="https://www.cidj.com/metiers/consultant-consultante-en-cybersecurite#:~:text=Description%20m%C3%A9tier&text=Le%20consultant%20en%20cybers%C3%A9curit%C3%A9%20%C3%A9tablit,en%20ad%C3%A9quation%20avec%20les%20besoins.">consultant cybersécurité ?</a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="vert.png">
+            <div class="rond"></div>
+        </div>
+    </main>
+    <div class="comp" >
+        <div class="competence" id="competences">
+            <h1> Compétences</h1>
+        </div>
+        <div class="rest">
+            <div class="molette">
+                <img src="C++.png" id="image1" class="logo">
+                <img src="html.png" id="image2"  class="logo">
+                <img src="python.png" id="image3"  class="logo">
+                <img src="json.png" id="image4"  class="logo">
+                <img src="linux.png" id="image5"  class="logo">
+                <img src="js2.png" id="image6"  class="logo">
+                <button  onclick="changerlogo()" class="clic">Suivant</button>
+            </div>
+            <div class="txt">
+                <div class="verre">
+                    <div class="redirection">
+                        <a href="#proj"><p id="texte1" class="redirection" >Voir un projet en lien</p></a>
+                        <a href="#proj"><p id="texte2" class="redirection" >Voir un projet en lien</p></a>
+                        <a href="#proj"><p id="texte3" class="redirection" >Voir un projet en lien</p></a>
+                        <a href="#proj"><p id="texte4" class="redirection" >Voir un projet en lien</p></a>
+                        <a href="#proj"><p id="texte5" class="redirection" >Voir un projet en lien</p></a>
+                        <a href="#proj"><p id="texte6" class="redirection" >Voir un projet en lien</p></a>
+                    </div>
+                    <div class="texte">
+                        <p id="desc1" class="descr"> C++ est un langage qui est plutôt orienté objet. C'est à dire qu'il est utilisé
+                            pour créer des applications mobiles ou des jeux vidéos par exemple. C++ est créer à partir du langage C
+                            Ainsi ce langage peut être intégré sur la plupart des microprocesseurs modernes.
+                        </p>
+                        <p id="desc2" class="descr"> Html est un langage utilisé pour la création de pages webs, si on souhaite créer
+                            un site web, HTML va créer la structure et insérer les éléments et le CSS va permettre de modifier l'apparence
+                            de ces éléments. Ainsi pour créer un site web de base, ces deux langages sont indispensables mais il suffit juste
+                            du HTML pour créer une simple page web.
+                        </p>
+                        <p id="desc3" class="descr"> Python est un langage de programmation interprété, multiparadigme et multiplateformes.
+                            C'est un langage excellent pour s'initier au développement. Il favorise la programmation inpérative structurée, 
+                            fonctionnelle et orientée objet.Python ç une syntaxe qui est conçue pour être lisible et directe
+                        </p>
+                        <p id="desc4" class="descr"> Json est un langage léger d'échange de données textuelles.
+                            Sur ordinateur, ce format se génère et s'analyse facilement. De plus ce langage est aussi simple
+                            et à une structure en aborescence. Ce langage peut être utilise pour gérer des bases de données comme
+                             les sauvegarder par exemple
+                        </p>
+                        <p id="desc5" class="descr"> Linux est un système d'exploitation Open source est gratuit,
+                            l'avantage de ce système est qu'il est beaucoup plus sécurisé que Windows et que tout le monde
+                            peut modifier et redistribuer le code source de linux. Il permet de réaliser de grandes choses
+                            en réseau informatique en y insérant des protocoles tel que SSH, DHCP, Apache, etc..
+                        </p>
+                        <p id="desc6" class="descr"> Javascript est un langage qui permet de créer du contenu dynamique,
+                            il permet aussi de réaliser des animations complexes que ça soit du texte, image ou vidéo sur une page web.
+                            Utiliser javascript est très utile sur un site web si on veut qu'il y'ait des interactions avec un utilisateur.
+                        </p>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <div class="proj">
+        <div>
+            <h1 id="proj" class="titre1">Mes projets</h1>
+        </div>
+        <div class="image">
+            <img src="projet1.png" id="img1" class="image0">
+            <img src="projet2.png" id="img2" class="image1">
+            <img src="projet3.png" id="img3" class="image2">
+            <img src="projet4.png" id="img4" class="image3">
+            <img src="projet5.png" id="img5" class="image4">
+        </div>
+
+        <div class="panel" id="affichage1">
+            <div class="crossover">
+                <a onclick="fermermenu('affichage1', 'bout1')" id="bout1" class="croix"></a>
+            </div>
+            <div class="bigboss">
+                <div class="carres">
+                    <img src="projet11.png" id="proj11">
+                    <img src="projet12.png" id="proj12">
+                    <img src="projet13.png" id="proj13">
+                    <img src="projet14.png" id="proj14">
+                    <button onclick="changerImage(0)" class="clic2">Image suivante</button>
+                </div>
+                <div class="sujette">
+                    <h1>Bibliothèque :</h1>
+                    <p>Ce projet programmé en python permet de Gérer une bibliothèque.
+                        C'est à dire permettre de créer et modifier de nouveaux livres/genres.
+                        Des conditions ont été crées pour éviter tout problème. De plus il y'a
+                        un système de sauvegarde et de chargement de base de donnée codé en json
+                    </p>
+                    <br>
+                    <a><span>Cadre:</span> Scolaire <br><span>Temps passé:</span> 15 heures <br><span>Groupe:</span> Non</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="panel" id="affichage2">
+            <div class="crossover">
+                <a onclick="fermermenu('affichage2', 'bout2')" id="bout2" class="croix"></a>
+            </div>
+            <div class="bigboss">
+                <div class="carres">
+                    <img src="projet21.png" id="proj21">
+                    <img src="projet22.png" id="proj22">
+                    <button onclick="changerImage(1)" class="clic2">Image suivante</button>
+                </div>
+                <div class="sujette">
+                    <h1>Gestion de données:</h1>
+                    <p>Le but de ce projet est d'ouvrir, éditer et écrire dans un fichier csv. 
+                        J'ai séléctionné un fichier csv sur le site "Dategouv" puis j'ai trié les données par année et j'ai fais un
+                        calcul de la moyenne.
+                    </p>
+                    <br>
+                    <a><span>Cadre:</span> Scolaire <br><span>Temps passé:</span> 5 heures <br><span>Groupe:</span> Non</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="panel" id="affichage3">
+            <div class="crossover">
+                <a onclick="fermermenu('affichage3', 'bout3')" id="bout3" class="croix"></a>
+            </div>
+            <div class="bigboss">
+                <div class="carres">
+                    <img src="projet31.png" id="proj31">
+                    <img src="projet32.png" id="proj32">
+                    <img src="projet33.png" id="proj33">
+                    <img src="projet34.png" id="proj34">
+                    <button onclick="changerImage(2)" class="clic2">Image suivante</button>
+                </div>
+                <div class="sujette">
+                    <h1>Fonctions logiques:</h1>
+                    <p>Ce projet à pour but de programmer des fonctions logiques
+                     tel que "AND", "OR". Le résultat affiché par les LEDS correspond donc 
+                     à la fonction programmée.Pour l'interface du téléphone, j'ai fais un
+                     partage de conexion sur lequel était connectée la carte arduino ce qui permettait
+                     de la contrôler depuis le téléphone.
+                    </p>
+                    <br>
+                    <a><span>Cadre:</span> Scolaire <br><span>Temps passé:</span> 10 heures <br><span>Groupe:</span> Non</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="panel" id="affichage4">
+            <div class="crossover">
+                <a onclick="fermermenu('affichage4', 'bout4')" id="bout4" class="croix"></a>
+            </div>
+            <div class="bigboss">
+                <div class="carres">
+                    <img src="projet41.png" id="proj41">
+                    <img src="projet42.png" id="proj42">
+                    <button onclick="changerImage(3)" class="clic2">Image suivante</button>
+                </div>
+                <div class="sujette">
+                    <h1>Portfolio:</h1>
+                    <p>J'ai décidé de créer un site web afin de développer mes compétences de programmation.
+                        J'ai commencé par du simple HTML/CSS. Puis ensuite j'ai créer des animations avec des "@keyframes".
+                        Pour ensuite finir par faire du javascript. Le javascript est utilisé beaucoup de fois sur ce site,
+                        comme lorsque on clique sur un bouton par exemple cette image sur laquelle vous avez cliqué.
+                    </p>
+                    <br>
+                    <a><span>Cadre:</span> Personnel <br><span>Temps passé:</span> 100 heures <br><span>Groupe:</span> Non</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="panel" id="affichage5">
+            <div class="crossover">
+                <a onclick="fermermenu('affichage5', 'bout5')" id="bout5" class="croix"></a>
+            </div>
+            <div class="bigboss">
+                <div class="carres">
+                    <img src="projet51.png" id="proj51">
+                    <img src="projet52.png" id="proj52">
+                    <img src="projet53.png" id="proj53">
+                    <img src="projet54.png" id="proj54">
+                    <img src="projet55.png" id="proj55">
+                    <img src="projet56.png" id="proj56">
+                    <button onclick="changerImage(4)" class="clic2">Image suivante</button>
+                </div>
+                <div class="sujette">
+                    <h1>Réseaux informatiques:</h1>
+                    <p>Le but de ce projet est de nous initier au réseaux informatiques.
+                         J'y ai donc appris plusieurs protocoles tel que le "dhcp", le "ssh", "apache",
+                         et a réaliser un réseau contenant ces 3 protocole ainsi que des serveur FTP,DNS
+                         et d'un serveur mirroir. J'ai aussi rélaisé quelques scripts bash pour répondre à des besoins.
+                    </p>
+                    <br>
+                    <a><span>Cadre:</span> Scolaire <br><span>Temps passé:</span> 25 heures <br><span>Groupe:</span> Non</a>
+               </div>
+            </div>
+        </div>
+    </div>       
+    <script src="site.js"></script>
+    <script>navbar()</script>
+    <script>projet(1),projet(2), projet(3), projet(4), projet(5)</script>
+    </body>    
+</html>
+
+

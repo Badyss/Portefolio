@@ -1,8 +1,8 @@
-const images= ["C++.png", "html.png", "python.png","json.png","linux.png","js2.png",];
+const images= ["C++.png", "html.png", "python.png","json.png","linux.png","js2.png", "leader.png", "cowork.png", "speak.png"];
 let imageIndex = 0;
 
 
-for (let i = 2; i <= 6; i++) {
+for (let i = 2; i <= 9; i++) {
     document.getElementById("image" + i).style.display = 'none';
     document.getElementById("texte" + i).style.display = 'none';
     document.getElementById("desc" + i).style.display = 'none';

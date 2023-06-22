@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="competences.css">
+    <title>Badyss</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#"><img src="logo.png" class="logonav"></a>
+            <nav class="navbar">   
+                <ul class="ul">
+                    <li><a href="#" class="ul" >Accueil</a></li>
+                    <li><a href="#competences" class="ul">Compétences</a></li>
+                    <li><a href="#" class="ul">Mes projets</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dropdown">
+            <div class="background">
+                <button class="dropbtn">Contact</button>
+            </div>
+            <div class="dropdown-content">
+                <div class="flex">
+                    <img src="gmail.png" class="gmail">
+                        <div>
+                            <a target="_blank"  href="mailto:badyss572@gmail.com" >Me contacter</a>
+                        </div>
+                </div>
+                <div class="flex">
+                    <img src="linkedin.png" class="linkedin"> 
+                        <div>
+                            <a target="_blank"  href="https://www.linkedin.com/in/badyss-azzouz-0468b8265" >Voir ma page</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="titre">BADYSS AZZ</h1>
+                <div class="switch"> <span></span></div>
+                    <div class="suis">Qui suis-je ? 🙇🏻</div>
+                <p class="pres"> Dans la vie je suis quelqu'un de simple, organisé et rigoureux.<br>
+                    Ce que j'aime plus que tout dans la vie, c'est les <a target="_blank" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_informatique">réseaux informatiques</a> et le basket.
+                </p>
+            <button onclick="intro()" id="savoir" class="savoir">En savoir plus </button>
+            <div id="javaw" class = "javaw">Bonjour, je m'appelle Badyss et je suis actuellement en BUT Réseaux & télécom à l'
+                <a target="_blank" href="https://www.univ-spn.fr/">Université Sorbonne Paris Nord</a>. J'aime bien les réseaux informatiques et conseiller des gens,
+                    j'ai pu expérimenter ces deux facultés d'une part au sein de mon rôle de chef d' au <a target="_blank" href="https://esplaboratory.gitlab.io/website/">Fablab</a> et d'une autre part grâce à mon BUT.
+                <br>Et donc je me suis dis, pourquoi ne pas être <a target="_blank" href="https://www.cidj.com/metiers/consultant-consultante-en-cybersecurite#:~:text=Description%20m%C3%A9tier&text=Le%20consultant%20en%20cybers%C3%A9curit%C3%A9%20%C3%A9tablit,en%20ad%C3%A9quation%20avec%20les%20besoins.">consultant cybersécurité ?</a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="vert.png">
+            <div class="rond"></div>
+        </div>
+    </main>
+    <comp>
+        <div class="competence">
+            <h1 id="competences"> Compétences</h1>
+        </div>
+        <div class="molette">
+            <img src="C++.png" id="image1" class="logo">
+            <img src="html.png" id="image2"  class="logo">
+            <img src="python.png" id="image3"  class="logo">
+            <img src="sql.png" id="image4"  class="logo">
+            <img src="linux.png" id="image5"  class="logo">
+            <img src="jaa.png" id="image6"  class="logo">
+            <button id="suivant" onclick="changerImage()" class="clic">Suivant</button>
+        </div>
+        <div class="verre">
+            <p id="texte1"> C++</p>
+            <p id="texte2"> html</p>
+            <p id="texte3"> python</p>
+            <p id="texte4"> sqoualle</p>
+            <p id="texte5"> linux</p>
+            <p id="texte6"> javascritpent</p>           
+        </div>
+    </comp>
+    <script src="site.js"></script>
+</body>
+</html>
+
